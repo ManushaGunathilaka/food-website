@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="section-container bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100%">
+    <div className="section-container">
       <div className="py-24 flex flex-col md:flex-row-reverse justify-between items-center gap-8">
         {/* images */}
         <div className="md:w-1/2">
@@ -92,8 +92,8 @@ const Banner = () => {
         {/* texts */}
         <div className="md:w-1/2 space-y-7 px-4">
           <h2 className="md:text-5xl text-4xl font-bold md:leading-snug leading-snug">
-            Flavor meets fire at{" "}
-            <span className="text-orange">M&nbsp;Spices</span>, from Cafe Manu
+            Flavor meets fire at <span className="text-red">M&nbsp;Spices</span>
+            , from Cafe Mint
           </h2>
 
           <p className="text-xl text-[#4A4A4A]">
