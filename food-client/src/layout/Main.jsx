@@ -5,11 +5,10 @@ import "../App.css";
 
 const Main = () => {
   return (
-    <div className="bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100%">
+    <div>
       <Navbar />
       <Outlet />
       {/*from react-router-dom, all children will be rendered from here */}
-      <footer>Footer</footer>;
     </div>
   );
 };
