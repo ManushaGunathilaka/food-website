@@ -2,100 +2,33 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="section-container bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100%">
-      <div className="py-24 flex flex-col md:flex-row-reverse justify-between items-center gap-8">
+    <div className="section-container bg-gradient-to-r from-[#FAFAFA] from-0% to-[#FCFCFC] to-100% sm:mt-20">
+      <div className="py-24 flex flex-col md:flex-row-reverse justify-between items-center lg:gap-40 gap-8">
         {/* images */}
-        <div className="md:w-1/2">
-          <img src="/images/home/Banner.png" alt="Banner" />
-
-          <div className="flex flex-col md:flex-row items-center justify-around -mt-14 gap-4">
-            <div className="flex bg-white py-2 px-3 rounded-2xl items-center gap-3 shadow-md w-64">
-              <img
-                src="/images/home/prowns.jpg"
-                alt="Pizza"
-                className="w-24 h-24 rounded-2xl object-cover"
-              />
-              <div className="space-y-1">
-                <h5 className="font-medium mb-1">Sea Food Thai</h5>
-                <div className="rating rating-sm  ">
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                    defaultChecked
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                  />
-                </div>
-                <p className="text-red">Rs.3800.00</p>
-              </div>
-            </div>
-            <div className="sm:flex hidden bg-white py-2 px-3 rounded-2xl items-center gap-3 shadow-md w-64">
-              <img
-                src="/images/home/pizza.jpg"
-                alt="Pizza"
-                className="w-24 h-24 rounded-2xl object-cover"
-              />
-              <div className="space-y-1">
-                <h5 className="font-medium mb-1">Chicago Pizza</h5>
-                <div className="rating rating-sm  ">
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                    defaultChecked
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-yellow-400"
-                  />
-                </div>
-                <p className="text-red">Rs.3800.00</p>
-              </div>
-            </div>
+        <div className="md:w-5/12 flex justify-center items-center h-full">
+          <div className="relative flex flex-col items-center">
+            {/* Banner Image */}
+            <img
+              src="/images/home/Banner.png"
+              alt="Banner"
+              className="relative w-[80%] h-auto mx-auto"
+            />
+            {/* Flying Burger Image */}
+            <img
+              src="/images/home/FlyingBurger.png"
+              alt="Flying Burger"
+              className="absolute flying-burger top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
           </div>
         </div>
-        {/* texts */}
-        <div className="md:w-1/2 space-y-7 px-4">
-          <h2 className="md:text-5xl text-4xl font-bold md:leading-snug leading-snug">
-            Flavor meets fire at <span className="text-red">M&nbsp;Spices</span>
-            , from Cafe Mint
-          </h2>
 
+        {/* texts */}
+        <div className="md:w-7/12 space-y-7 pl-10">
+          <h2 className="md:text-5xl text-4xl font-bold md:leading-snug leading-snug">
+            <span className="text-red">Hungry?&nbsp;&nbsp;</span>Explore
+            Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and Order
+            Now..!
+          </h2>
           <p className="text-xl text-[#4A4A4A]">
             Crafting Memorable Dining Experiences Through Culinary Mastery and
             Artisanal Skills

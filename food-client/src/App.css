@@ -22,3 +22,24 @@ header {
 .heartStar {
   border-radius: 0px 28px 0px 28px;
 }
+
+/* Animation Keyframes */
+@keyframes flyIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to the Flying Burger */
+.flying-burger {
+  animation: flyIn 2s ease-out;
+}
