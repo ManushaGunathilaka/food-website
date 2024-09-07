@@ -30,7 +30,7 @@ const serviceLists = [
 const OurServices = () => {
   return (
     <div className="section-container my-16">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-32">
         <div className="md:w-1/2">
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 items-center">
             {serviceLists.map((service) => (
