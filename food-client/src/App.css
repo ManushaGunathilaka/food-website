@@ -20,7 +20,7 @@ header {
 }
 
 .heartStar {
-  border-radius: 28px 28px 28px 5px;
+  border-radius: 28px 28px 28px 28px;
 }
 
 /* Animation Keyframes */
@@ -42,4 +42,10 @@ header {
 /* Apply animation to the Flying Burger */
 .flying-burger {
   animation: flyIn 2s ease-out;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #ff8418;
 }
