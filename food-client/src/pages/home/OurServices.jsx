@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const serviceLists = [
   {
     id: 1,
     title: "Catering",
-    des: "Delight your guests with our flavors and  presentation",
+    des: "Delight your guests with our flavors and presentation",
     img: "/images/home/services/icon1.png",
   },
   {
@@ -16,7 +17,7 @@ const serviceLists = [
   {
     id: 3,
     title: "Online Ordering",
-    des: "Explore menu & order with ease using our Online Ordering n",
+    des: "Explore menu & order with ease using our Online Ordering",
     img: "/images/home/services/icon3.png",
   },
   {
@@ -33,15 +34,19 @@ const OurServices = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-32">
         <div className="md:w-1/2">
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 items-center">
-            {serviceLists.map((service) => (
-              <div
+            {serviceLists.map((service, index) => (
+              <motion.div
                 key={service.id}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                whileHover={{ scale: 1.15 }}
                 className="shadow-md rounded-sm py-5 px-4 text-center space-y-2 text-orange cursor-pointer hover:border hover:border-indigo-600 transition-all duration-200"
               >
-                <img src={service.img} alt="" className=" mx-auto" />
+                <img src={service.img} alt="" className="mx-auto" />
                 <h5 className="pt-3 font-semibold"> {service.title}</h5>
                 <p className="text-[#EDA86F]">{service.des}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
